@@ -299,13 +299,10 @@
             justify-content: center;
             align-items: flex-end;
             z-index: 1;
-            /* Images are clickable now, so pointer events auto */
             pointer-events: auto;
             overflow: hidden;
             line-height: 0;
         }
-        
-        /* Make hero image clickable */
         .hero-image-link {
             display: block;
             width: auto;
@@ -401,10 +398,6 @@
             font-size: 1.8rem;
         }
         .navbar-toggler:focus { box-shadow: none; }
-        
-        /* 
-         * Common Section Styles
-         */
         .section-padding {
             padding: 80px 0;
         }
@@ -413,7 +406,6 @@
             color: #ffffff;
             text-shadow: 0 0 10px rgba(0, 242, 255, 0.5);
         }
-
         .section-title {
             font-weight: 700;
             text-transform: uppercase;
@@ -422,7 +414,6 @@
             position: relative;
             display: inline-block;
         }
-        
         .section-subtitle {
             font-size: 1rem;
             color: #a0c4c7;
@@ -431,17 +422,10 @@
             margin-left: auto;
             margin-right: auto;
         }
-
-        /*
-         * About Section 
-         * Color: Level 1 Dark (Base Primary)
-         */
         #about-section {
             background-color: var(--bg-about);
             position: relative;
         }
-        
-        /* Subtle pattern overlay for About */
         #about-section::before {
             content: '';
             position: absolute;
@@ -450,14 +434,12 @@
             background-size: 30px 30px;
             pointer-events: none;
         }
-
         .about-text {
             color: #e0e0e0;
             line-height: 1.8;
             font-size: 1.05rem;
             margin-bottom: 20px;
         }
-
         .about-image-wrapper {
             position: relative;
             border-radius: 20px;
@@ -466,14 +448,12 @@
             box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
             cursor: pointer;
         }
-        
         .about-img {
             width: 100%;
             height: auto;
             display: block;
             transition: transform 0.5s ease;
         }
-        
         .about-image-wrapper:hover .about-img {
             transform: scale(1.05);
         }
@@ -557,7 +537,7 @@
             overflow: hidden;
             cursor: pointer;
             transition: transform 0.3s ease;
-            height: 100%; /* Ensure equal height */
+            height: 100%;
         }
         .package-card:hover {
             transform: translateY(-5px);
@@ -728,10 +708,6 @@
             color: #555;
             font-size: 0.85rem;
         }
-
-        /* 
-         * Mobile Sticky Signup Button 
-         */
         #mobile-sticky-signup {
             position: fixed;
             bottom: 30px;
@@ -745,11 +721,9 @@
             text-decoration: none;
             border-radius: 50px;
             z-index: 1040;
-            
-            /* Initial state */
+
             transform: translateY(150%);
             opacity: 0;
-            /* Transition for appearance, and specific transition for 'bottom' for footer docking */
             transition: transform 0.4s ease, opacity 0.4s ease, bottom 0.1s linear;
         }
 
@@ -757,24 +731,66 @@
             transform: translateY(0);
             opacity: 1;
             
-            /* Colourless Liquidy Glass Effect */
-            background: rgba(255, 255, 255, 0.08); /* Very transparent */
-            backdrop-filter: blur(6px); /* Less blur */
+            background: rgba(255, 255, 255, 0.08); 
+            backdrop-filter: blur(6px); 
             -webkit-backdrop-filter: blur(6px);
             border: 1px solid rgba(255, 255, 255, 0.25);
-            /* Subtle shine and soft shadow */
             box-shadow: 
                 0 10px 30px rgba(0, 0, 0, 0.1), 
                 inset 0 0 15px rgba(255, 255, 255, 0.1);
             text-shadow: 0 2px 4px rgba(0,0,0,0.3);
         }
+#popup-container {
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  background: white;
+  padding: 15px 20px;
+  border-radius: 12px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+  font-family: sans-serif;
+  border-left: 5px solid #2ecc71;
+  transition: all 0.5s ease-in-out;
+  z-index: 1000;
+  max-width: 280px;
+}
 
+.popup-hidden {
+  opacity: 0;
+  transform: translateX(-100%);
+}
+
+.popup-visible {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.popup-header { font-size: 14px; color: #333; margin-bottom: 5px; }
+.popup-body { font-size: 13px; color: #111; line-height: 1.4; }
+.popup-footer { font-size: 11px; color: #888; margin-top: 8px; }
     </style>
 </head>
+  <div id="popup-container" class="popup-hidden">
+  <div class="popup-content">
+    <div class="popup-header">
+      <span id="user-flag">🇳🇬</span> 
+      <strong id="user-name">Rebecca</strong> from 
+      <span id="user-location">Lagos</span>
+    </div>
+
+    <div class="popup-body">
+      <span id="user-action">just subscribed to</span><br>
+      <strong id="activity-detail">STREAM AFRICA — ₦2,500</strong>
+    </div>
+
+    <div class="popup-footer">
+      • <span id="time-ago">2 mins ago</span>
+    </div>
+  </div>
+</div>
 <body>
 
     <div class="page-wrapper">
-        <!-- Main Hero Section -->
         <section id="hero-section">
             <nav class="navbar navbar-expand-lg fixed-top">
                 <div class="container">
@@ -799,8 +815,6 @@
                     </div>
                 </div>
             </nav>
-
-            <!-- Clickable Hero Images -->
             <div class="hero-image-wrapper">
                  <a href="register.html" class="hero-image-link d-none d-lg-block">
                     <img src="hero-image-mobile.png" alt="Hero Desktop" class="hero-img" data-aos="fade-in" data-aos-duration="1200" data-aos-delay="200">
@@ -832,11 +846,9 @@
             </div>
         </section>
         
-        <!-- About Section -->
         <section id="about-section" class="section-padding">
             <div class="container">
                 <div class="row align-items-center">
-                    <!-- Clickable Image Column -->
                     <div class="col-lg-6 mb-5 mb-lg-0" data-aos="fade-right">
                         <a href="register.html" class="d-block">
                             <div class="about-image-wrapper">
@@ -844,8 +856,7 @@
                             </div>
                         </a>
                     </div>
-                    
-                    <!-- Text Column -->
+        
                     <div class="col-lg-6" data-aos="fade-left">
                         <div class="ps-lg-4 text-center text-lg-start">
                             <h2 class="section-title glow-text">Who are we?</h2>
@@ -960,7 +971,6 @@
                 </div>
                 
                 <div class="row justify-content-center g-4">
-                    <!-- 15k Package (Premium) - Now First -->
                     <div class="col-md-6 col-lg-5" data-aos="fade-up">
                         <a href="register.html" class="package-card-link">
                             <div class="package-card popular" style="transform: scale(1.05); border-color: var(--accent-glow); box-shadow: 0 0 30px rgba(0, 242, 255, 0.15);">
@@ -968,7 +978,7 @@
                                 <div class="package-content">
                                     <h3 class="text-uppercase mb-3" style="color: #fff; font-size: 1.8rem;">Premium Access</h3>
                                     <div class="package-price">
-                                        <span class="package-currency">₦</span>12,000
+                                        <span class="package-currency">₦</span>12,500
                                     </div>
                                     <p class="text-white-50">One-time payment for lifetime platform access</p>
                                     
@@ -993,9 +1003,7 @@
             </div>
         </section>
 
-        <!-- FAQ & CTA Wrapper (Dark) -->
         <div id="faq-cta-wrapper">
-            <!-- FAQ Section -->
             <section class="section-padding">
                 <div class="container">
                     <div class="text-center mb-5" data-aos="fade-up">
@@ -1040,7 +1048,6 @@
                                         </div>
                                     </div>
                                 </div>
-                                <!-- New Item 5 -->
                                  <div class="accordion-item">
                                     <h2 class="accordion-header">
                                         <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq5">
@@ -1053,7 +1060,6 @@
                                         </div>
                                     </div>
                                 </div>
-                                <!-- New Item 6 -->
                                  <div class="accordion-item">
                                     <h2 class="accordion-header">
                                         <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq6">
@@ -1071,8 +1077,6 @@
                     </div>
                 </div>
             </section>
-
-            <!-- CTA Section -->
             <section class="py-5 mb-5">
                 <div class="container">
                     <div class="cta-box" data-aos="zoom-in">
@@ -1083,8 +1087,6 @@
                 </div>
             </section>
         </div>
-
-        <!-- Footer -->
         <footer>
             <div class="container">
                 <div class="row">
@@ -1133,38 +1135,32 @@
             </div>
         </footer>
     </div>
-
-    <!-- Mobile Sticky Signup Button -->
     <a href="register.html" id="mobile-sticky-signup" class="d-lg-none">Signup</a>
 
-    <!-- Scripts -->
+
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
         $(document).ready(function() {
-            // Initialize AOS Animation
             AOS.init({
                 once: true,
                 offset: 50,
                 duration: 1000
             });
 
-            // Navbar & Sticky Button Scroll Logic
             $(window).scroll(function() {
                 var scrollTop = $(this).scrollTop();
                 var windowHeight = $(window).height();
                 var heroHeight = $('#hero-section').outerHeight();
                 var footerOffset = $('footer').offset().top;
 
-                // 1. Header Glassmorphism
                 if (scrollTop > 50) {
                     $('.navbar').addClass('navbar-scrolled');
                 } else {
                     $('.navbar').removeClass('navbar-scrolled');
                 }
                 
-                // 2. Mobile Sticky Signup Button Visibility
                 var $btn = $('#mobile-sticky-signup');
                 
                 if (scrollTop > heroHeight - 100) { 
@@ -1172,7 +1168,6 @@
                 } else {
                     $btn.removeClass('show-sticky');
                 }
-
                 if (scrollTop + windowHeight > footerOffset) {
                     var overlap = (scrollTop + windowHeight) - footerOffset;
                     $btn.css('bottom', (30 + overlap) + 'px');
@@ -1181,6 +1176,46 @@
                 }
             });
         });
+const popup = document.getElementById('popup-container');
+
+const users = [
+  { name: "Olakunle", city: "Lagos", flag: "🇳🇬", currency: "₦" },
+  { name: "Chidi", city: "Enugu", flag: "🇳🇬", currency: "₦" },
+  { name: "Amina", city: "Kano", flag: "🇳🇬", currency: "₦" },
+  { name: "Pascal", city: "Douala", flag: "🇨🇲", currency: "CFA" },
+  { name: "Manu", city: "Yaoundé", flag: "🇨🇲", currency: "CFA" }
+];
+
+function showPopup() {
+  const user = users[Math.floor(Math.random() * users.length)];
+
+  const activities = [
+    { text: "just withdrew", detail: `EARNINGS — ${user.currency}${Math.floor(Math.random() * 5000) + 1000}` },
+    { text: "activated plan:", detail: "STREAM PREMIUM GOLD" },
+    { text: "just subscribed to", detail: `STREAM AFRICA — ${user.currency}${Math.floor(Math.random() * 2000) + 500}` }
+  ];
+
+  const act = activities[Math.floor(Math.random() * activities.length)];
+
+  document.getElementById('user-flag').innerText = user.flag;
+  document.getElementById('user-name').innerText = user.name;
+  document.getElementById('user-location').innerText = user.city;
+  document.getElementById('user-action').innerText = act.text;
+  document.getElementById('activity-detail').innerText = act.detail;
+  document.getElementById('time-ago').innerText =
+    `${Math.floor(Math.random() * 45) + 1} mins ago`;
+
+  popup.classList.remove('popup-hidden');
+  popup.classList.add('popup-visible');
+
+  setTimeout(() => {
+    popup.classList.remove('popup-visible');
+    popup.classList.add('popup-hidden');
+  }, 5000);
+}
+
+setInterval(showPopup, 10000);
+setTimeout(showPopup, 2000);
     </script>
 </body>
-                                      </html>
+                                                                                                    </html>
