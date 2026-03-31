@@ -1,1222 +1,170 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<script async src="https://www.googletagmanager.com/gtag/js?id=AW-17657451171"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'AW-17657451171');
-</script>
-<script>
-  gtag('event', 'conversion', {
-      'send_to': 'AW-17657451171/saDVCOuflq4bEKOl3eNB',
-      'value': 1.0,
-      'currency': 'USD'
-  });
-</script>
-
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Service Suspended - Payment Required</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     
-    <!-- ============================================ -->
-    <!-- SEO & METADATA (GOOGLE ADS OPTIMIZED)        -->
-    <!-- ============================================ -->
-    <title>Stream - Premier Platform for Digital Gigs & Skills in Africa</title>
-    <meta name="description" content="Join Stream (streamafrica.ng) to access freelance gigs, media tasks, and digital skill training. The ultimate ecosystem for remote work and personal development in Nigeria.">
-    <meta name="keywords" content="Freelance Jobs Nigeria, Digital Marketing Training, Social Media Gigs, Remote Work Africa, Stream Africa, Skill Acquisition, Online Tasks">
-    <meta name="author" content="Stream Technology">
-    <meta name="robots" content="index, follow">
-    <meta name="theme-color" content="#013740">
-    <link rel="canonical" href="">
-
-    <!-- Open Graph / Facebook -->
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://streamafrica.ng/">
-    <meta property="og:title" content="Stream - Unlock Digital Opportunities">
-    <meta property="og:description" content="Connect to the Stream ecosystem. Access freelance gigs, media tasks, and professional mentorship. Start your journey today.">
-    <meta property="og:image" content="https://streamafrica.ng/assets/hero-image-desktop.png">
-    <meta property="og:site_name" content="Stream Africa">
-
-    <!-- Twitter -->
-    <meta property="twitter:card" content="summary_large_image">
-    <meta property="twitter:url" content="https://streamafrica.ng/">
-    <meta property="twitter:title" content="Stream - Unlock Digital Opportunities">
-    <meta property="twitter:description" content="Connect to the Stream ecosystem. Access freelance gigs, media tasks, and professional mentorship.">
-    <meta property="twitter:image" content="https://streamafrica.ng/assets/hero-image-desktop.png">
-
-    <!-- ============================================ -->
-    <!-- FAVICONS                                     -->
-    <!-- ============================================ -->
-    <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
-    <link rel="manifest" href="assets/favicon/site.webmanifest"> 
-    <!-- If you don't have a manifest file, browsers will still use the icons below -->
-    <link rel="shortcut icon" href="assets/favicon/favicon.ico">
-
-    <!-- ============================================ -->
-    <!-- STRUCTURED DATA (JSON-LD)                    -->
-    <!-- ============================================ -->
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "WebSite",
-      "name": "Stream Africa",
-      "url": "https://streamafrica.ng/",
-      "description": "A Unified Platform for Freelancing, Media Tasks, and Community Development.",
-      "potentialAction": {
-        "@type": "SearchAction",
-        "target": "https://streamafrica.ng/search?q={search_term_string}",
-        "query-input": "required name=search_term_string"
-      }
-    }
-    </script>
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "Organization",
-      "name": "Stream Technology",
-      "url": "https://streamafrica.ng",
-      "logo": "https://streamafrica.ng/assets/logo.svg",
-      "sameAs": [
-        "https://facebook.com/streamafrica",
-        "https://twitter.com/streamafrica",
-        "https://instagram.com/streamafrica"
-      ],
-      "contactPoint": {
-        "@type": "ContactPoint",
-        "telephone": "+234-000-000-0000",
-        "contactType": "customer service",
-        "areaServed": "NG"
-      }
-    }
-    </script>
-    
-    <!-- Google Fonts: Poppins -->
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    
-    <!-- Bootstrap 5.3.3 CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-    
-    <!-- Font Awesome 6 -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
-    
-    <!-- AOS Animation CSS -->
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-
-    <!-- INTERNAL TRACKER (Google Ads Verification) -->
-    <script type="module" src="tracker.js"></script>
-
     <style>
         :root {
-            --primary-color: #013740;
-            --secondary-color: #02505d;
-            --accent-glow: #00f2ff;
-            --text-color-light: #ffffff;
-            --font-main: 'Poppins', sans-serif;
-            --card-bg: rgba(255, 255, 255, 0.05);
-            --card-border: rgba(255, 255, 255, 0.1);
-            
-            /* Section Backgrounds - Progressive Darkening */
-            --bg-about: #013740;
-            --bg-features: #012e36;
-            --bg-packages: #01252b;
-            --bg-faq: #001518;
-            --bg-footer: #000000;
-            --section-outline: 1px solid rgba(255, 255, 255, 0.1);
-        }
-        .page-wrapper {
-            width: 100%;
-            overflow: hidden;
+            --primary-color: #ef4444; /* Changed to Red for urgency */
+            --text-dark: #1e293b;
+            --text-light: #64748b;
+            --warning-bg: #fef2f2;
         }
 
         body {
-            font-family: var(--font-main);
-            overflow-x: hidden; /* Kept as fallback, though page-wrapper handles it */
-            background-color: var(--primary-color);
-            color: var(--text-color-light);
-            margin: 0;
-            padding: 0;
-        }
-
-        a {
-            text-decoration: none;
-            color: inherit;
-        }
-
-        h1, h2, h3, h4, h5 {
-            font-weight: 600;
-        }
-
-        /* 
-         * Hero Section Container 
-         */
-        #hero-section {
-            position: relative;
-            width: 100%;
+            background-color: #f8fafc;
+            color: var(--text-dark);
+            font-family: 'Inter', system-ui, -apple-system, sans-serif;
+            display: flex;
+            align-items: center;
+            justify-content: center;
             min-height: 100vh;
-            background-size: cover;
-            background-position: center;
-            background-repeat: no-repeat;
-            overflow: hidden;
-            border-bottom: var(--section-outline);
+            margin: 0;
+            padding: 20px;
         }
 
-        /* Background Texture Logic */
-        #hero-section {
-            background-image: url('assets/mobile-background.jpg');
-        }
-        @media (min-width: 992px) {
-            #hero-section {
-                background-image: url('assets/desktop-background.jpg');
-            }
-        }
-
-        /* 
-         * Navbar Styling - Colourless Glassmorph 
-         */
-        .navbar {
-            z-index: 1030;
-            padding-top: 1.5rem;
-            padding-bottom: 1.5rem;
-            transition: all 0.4s ease;
-        }
-
-        .navbar-scrolled {
-            padding-top: 1rem;
-            padding-bottom: 1rem;
-            background: rgba(255, 255, 255, 0.05) !important; 
-            backdrop-filter: blur(6px);
-            -webkit-backdrop-filter: blur(6px);
-            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-        }
-        .navbar-brand img {
-            height: 40px;
-            width: auto;
-        }
-        .nav-link {
-            color: #fff !important;
-            font-weight: 500;
-            margin-left: 1rem;
-            margin-right: 1rem;
-            opacity: 0.9;
-            transition: opacity 0.3s;
-        }
-        .nav-link:hover {
-            opacity: 1;
-            color: var(--accent-glow) !important;
-        }
-        @media (max-width: 991px) {
-            .navbar {
-                background-color: transparent;
-            }
-            .navbar-collapse {
-                background: rgba(1, 55, 64, 0.98);
-                padding: 1rem;
-                border-radius: 10px;
-                margin-top: 10px;
-                border: 1px solid rgba(255,255,255,0.1);
-            }
-        }
-        .btn-custom {
-            padding: 12px 35px;
-            border-radius: 50px;
-            font-weight: 600;
-            font-size: 1rem;
-            text-decoration: none;
-            transition: all 0.3s ease;
-            display: inline-block;
-            white-space: nowrap;
-        }
-        .btn-primary-custom {
-            background-color: #ffffff;
-            color: var(--primary-color);
-            border: none;
-            box-shadow: 0 0 15px rgba(255, 255, 255, 0.4);
-        }
-        .btn-primary-custom:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 0 20px rgba(0, 242, 255, 0.6);
-            color: var(--primary-color);
-            background-color: var(--accent-glow);
-        }
-        .btn-secondary-custom {
-            background: rgba(255, 255, 255, 0.1);
-            backdrop-filter: blur(10px);
-            -webkit-backdrop-filter: blur(10px);
-            color: #ffffff;
-            border: 1px solid rgba(255, 255, 255, 0.3);
-            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-        }
-        .btn-secondary-custom:hover {
-            background: rgba(255, 255, 255, 0.2);
-            color: #ffffff;
-            border-color: var(--accent-glow);
-            transform: translateY(-2px);
-            box-shadow: 0 0 20px rgba(0, 242, 255, 0.3);
-        }
-
-        .btn-nav-register {
-            padding: 8px 24px;
-            font-size: 0.9rem;
-        }
-        @media (min-width: 992px) {
-            .btn-nav-register { margin-left: 1rem; }
-        }
-        @media (max-width: 991px) {
-            .btn-nav-register { margin-right: 15px; }
-        }
-        .hero-content-layer {
-            position: absolute;
-            top: 0;
-            left: 0;
-            z-index: 5;
+        .container {
+            max-width: 550px;
             width: 100%;
-            height: 100%;
-            pointer-events: none;
-        }
-        .hero-content-layer .container, 
-        .hero-content-layer .btn-custom {
-            pointer-events: auto;
-        }
-
-        .hero-title {
-            font-weight: 300;
-            line-height: 1.4;
-            margin-bottom: 15rem;
+            padding: 40px;
+            background: white;
+            border-radius: 24px;
+            box-shadow: 0 20px 50px rgba(0,0,0,0.1);
+            text-align: center;
+            border: 1px solid #fee2e2;
         }
 
-        .hero-image-wrapper {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            display: flex;
-            justify-content: center;
-            align-items: flex-end;
-            z-index: 1;
-            pointer-events: auto;
-            overflow: hidden;
-            line-height: 0;
-        }
-        .hero-image-link {
-            display: block;
-            width: auto;
-            max-width: 100%;
-            height: auto;
-            max-height: 85vh;
-            cursor: pointer;
-        }
-        .hero-img {
-            display: block;
-            width: auto;
-            height: auto;
-            max-width: 100%;
-        }
-
-        .hero-buttons-container {
-            display: flex;
-            gap: 20px;
-        }
-        @media (max-width: 991px) {
-            #hero-section {
-                display: flex;
-                flex-direction: column;
-                height: auto;
-                min-height: 100vh;
-            }
-            .navbar {
-                order: 1;
-                position: fixed;
-                width: 100%;
-            }
-            .hero-content-layer {
-                position: relative;
-                height: auto;
-                order: 2;
-                padding-bottom: 1rem;
-                padding-top: 80px;
-            }
-            .hero-content-layer .container,
-            .hero-content-layer .row {
-                height: auto !important; 
-            }
-            .hero-image-wrapper {
-                position: relative;
-                height: auto;
-                order: 3;
-                display: block;
-                margin-top: auto;
-            }
-            .hero-img {
-                width: 100%;
-                height: auto;
-            }
-            .hero-title {
-                font-size: 1.1rem;
-                text-align: center;
-                margin: 0 auto 2.5rem auto;
-                max-width: 90%;
-            }
-            .hero-buttons-container {
-                justify-content: center;
-                margin-bottom: 2rem;
-            }
-            .mobile-content-wrapper {
-                padding-top: 2rem;
-            }
-        }
-        @media (min-width: 992px) {
-            .hero-title {
-                font-size: 1.1rem; 
-                text-align: left;
-                max-width: 280px;
-            }
-            .hero-buttons-col {
-                display: flex;
-                flex-direction: column;
-                justify-content: flex-end;
-                align-items: flex-end;
-                padding-bottom: 3rem;
-            }
-            .hero-text-col {
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
-                padding-top: 15vh;
-            }
-        }
-
-        .navbar-toggler {
-            border: none;
-            color: white;
-            padding: 0;
-            font-size: 1.8rem;
-        }
-        .navbar-toggler:focus { box-shadow: none; }
-        .section-padding {
-            padding: 80px 0;
-        }
-        
-        .glow-text {
-            color: #ffffff;
-            text-shadow: 0 0 10px rgba(0, 242, 255, 0.5);
-        }
-        .section-title {
-            font-weight: 700;
-            text-transform: uppercase;
-            letter-spacing: 2px;
-            margin-bottom: 1rem;
-            position: relative;
-            display: inline-block;
-        }
-        .section-subtitle {
-            font-size: 1rem;
-            color: #a0c4c7;
-            margin-bottom: 3rem;
-            max-width: 600px;
-            margin-left: auto;
-            margin-right: auto;
-        }
-        #about-section {
-            background-color: var(--bg-about);
-            position: relative;
-        }
-        #about-section::before {
-            content: '';
-            position: absolute;
-            top: 0; left: 0; right: 0; bottom: 0;
-            background-image: radial-gradient(circle at 50% 50%, rgba(255,255,255,0.03) 1px, transparent 1px);
-            background-size: 30px 30px;
-            pointer-events: none;
-        }
-        .about-text {
-            color: #e0e0e0;
-            line-height: 1.8;
-            font-size: 1.05rem;
+        .icon-box {
+            font-size: 4rem;
+            color: var(--primary-color);
             margin-bottom: 20px;
-        }
-        .about-image-wrapper {
-            position: relative;
-            border-radius: 20px;
-            overflow: hidden;
-            border: 1px solid rgba(255, 255, 255, 0.1);
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
-            cursor: pointer;
-        }
-        .about-img {
-            width: 100%;
-            height: auto;
-            display: block;
-            transition: transform 0.5s ease;
-        }
-        .about-image-wrapper:hover .about-img {
-            transform: scale(1.05);
-        }
-        #features-section {
-            background-color: var(--bg-features);
-            padding-bottom: 100px;
-            border-top: var(--section-outline);
+            animation: pulse 2s infinite;
         }
 
-        .feature-box-link {
+        @keyframes pulse {
+            0% { transform: scale(1); opacity: 1; }
+            50% { transform: scale(1.1); opacity: 0.8; }
+            100% { transform: scale(1); opacity: 1; }
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            margin: 0 0 10px 0;
+            font-weight: 800;
+            color: #b91c1c;
+        }
+
+        .status-badge {
+            display: inline-block;
+            background: var(--warning-bg);
+            color: var(--primary-color);
+            padding: 6px 16px;
+            border-radius: 99px;
+            font-weight: 700;
+            font-size: 0.85rem;
+            text-transform: uppercase;
+            margin-bottom: 20px;
+            border: 1px solid #fecaca;
+        }
+
+        p {
+            color: var(--text-light);
+            font-size: 1.1rem;
+            line-height: 1.6;
+            margin-bottom: 25px;
+        }
+
+        .debt-notice {
+            background: #fff7ed;
+            border-left: 4px solid #f97316;
+            padding: 15px;
+            text-align: left;
+            margin-bottom: 30px;
+            border-radius: 8px;
+        }
+
+        .debt-notice strong {
+            color: #9a3412;
             display: block;
-            height: 100%;
-            text-decoration: none;
+            margin-bottom: 5px;
         }
-        .feature-box {
-            background: var(--card-bg);
-            border: 1px solid var(--card-border);
-            border-radius: 20px;
-            padding: 2.5rem 2rem;
-            height: 100%;
-            transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-            position: relative;
-            overflow: hidden;
-            backdrop-filter: blur(10px);
-            cursor: pointer;
-        }
-        .feature-box:hover {
-            transform: translateY(-10px);
-            background: rgba(255, 255, 255, 0.1);
-            border-color: rgba(0, 242, 255, 0.5);
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3), 0 0 20px rgba(0, 242, 255, 0.1);
-        }
-        .feature-icon {
-            width: 70px;
-            height: 70px;
-            background: rgba(1, 55, 64, 0.5);
-            border: 1px solid var(--accent-glow);
-            border-radius: 50%;
-            display: flex;
+
+        .btn {
+            display: inline-flex;
             align-items: center;
             justify-content: center;
-            font-size: 1.8rem;
-            color: var(--accent-glow);
-            margin-bottom: 1.5rem;
-            transition: all 0.4s ease;
-        }
-        .feature-box:hover .feature-icon {
-            background: var(--accent-glow);
-            color: var(--primary-color);
-            box-shadow: 0 0 15px var(--accent-glow);
-        }
-        .feature-title {
-            color: #fff;
-            font-size: 1.25rem;
-            margin-bottom: 1rem;
-        }
-        .feature-desc {
-            color: #b0d0d3;
-            font-size: 0.95rem;
-            line-height: 1.6;
-        }
-        #packages-section {
-            background-color: var(--bg-packages);
-            padding-bottom: 80px;
-            border-top: var(--section-outline);
-        }
-        .package-card-link {
-            display: block;
+            gap: 10px;
+            padding: 14px 28px;
+            background-color: var(--text-dark);
+            color: white;
             text-decoration: none;
-            width: 100%;
-            margin: 0 auto;
-        }
-        .package-card {
-            background: linear-gradient(145deg, rgba(255,255,255,0.1), rgba(255,255,255,0.05));
-            border: 1px solid rgba(0, 242, 255, 0.3);
-            border-radius: 25px;
-            padding: 3rem 2rem;
-            width: 100%;
-            text-align: center;
-            position: relative;
-            overflow: hidden;
-            cursor: pointer;
-            transition: transform 0.3s ease;
-            height: 100%;
-        }
-        .package-card:hover {
-            transform: translateY(-5px);
-        }
-        .package-card.popular::before {
-            content: '';
-            position: absolute;
-            top: -50%;
-            left: -50%;
-            width: 200%;
-            height: 200%;
-            background: radial-gradient(circle, rgba(0,242,255,0.1) 0%, transparent 70%);
-            animation: rotate 10s linear infinite;
-        }
-        @keyframes rotate {
-            0% { transform: rotate(0deg); }
-            100% { transform: rotate(360deg); }
-        }
-        .package-content {
-            position: relative;
-            z-index: 1;
-        }
-        .package-price {
-            font-size: 3rem;
-            font-weight: 700;
-            color: var(--accent-glow);
-            margin: 1.5rem 0;
-            text-shadow: 0 0 15px rgba(0, 242, 255, 0.3);
-        }
-        .package-currency {
-            font-size: 1.5rem;
-            vertical-align: top;
-            margin-right: 5px;
-        }
-        .benefits-list {
-            list-style: none;
-            padding: 0;
-            margin: 2rem 0;
-            text-align: left;
-        }
-        .benefits-list li {
-            margin-bottom: 1rem;
-            color: #fff;
-            display: flex;
-            align-items: center;
-        }
-        .benefits-list li i {
-            color: var(--accent-glow);
-            margin-right: 15px;
-            font-size: 1.1rem;
-        }
-        .most-popular-badge {
-            position: absolute;
-            top: 20px;
-            right: -35px;
-            background: var(--accent-glow);
-            color: var(--primary-color);
-            padding: 5px 40px;
-            transform: rotate(45deg);
-            font-weight: 700;
-            font-size: 0.8rem;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.2);
-        }
-        #faq-cta-wrapper {
-            background-color: var(--bg-faq);
-            border-top: var(--section-outline);
-        }
-        .accordion-item {
-            background-color: rgba(255, 255, 255, 0.03);
-            border: 1px solid rgba(255, 255, 255, 0.1);
-            color: #fff;
-            margin-bottom: 10px;
-            border-radius: 10px !important;
-            overflow: hidden;
-        }
-        .accordion-button {
-            background-color: transparent;
-            color: #fff;
-            font-weight: 500;
-        }
-        .accordion-button:not(.collapsed) {
-            background-color: rgba(0, 242, 255, 0.1);
-            color: var(--accent-glow);
-            box-shadow: none;
-        }
-        .accordion-button:focus {
-            box-shadow: none;
-        }
-        .accordion-button::after {
-            filter: invert(1);
-        }
-        .cta-box {
-            background: linear-gradient(90deg, #000000 0%, #013740 100%);
-            border: 1px solid rgba(255, 255, 255, 0.2);
-            border-radius: 30px;
-            padding: 4rem 2rem;
-            text-align: center;
-            position: relative;
-            overflow: hidden;
-        }
-
-        footer {
-            background-color: var(--bg-footer);
-            padding: 4rem 0 2rem 0;
-            border-top: var(--section-outline);
-        }
-
-        .footer-brand {
-            margin-bottom: 1.5rem;
-            display: block;
-        }
-        .footer-brand img {
-            height: 40px;
-        }
-
-        .footer-desc {
-            color: #888;
-            font-size: 0.9rem;
-            margin-bottom: 1.5rem;
-        }
-
-        .footer-heading {
-            color: #fff;
-            font-size: 1.1rem;
-            margin-bottom: 1.5rem;
+            border-radius: 12px;
             font-weight: 600;
+            transition: all 0.3s ease;
+            width: 100%;
+            box-sizing: border-box;
+        }
+
+        .btn:hover {
+            background-color: #000;
+            transform: translateY(-2px);
         }
 
         .footer-links {
-            list-style: none;
-            padding: 0;
+            margin-top: 30px;
+            padding-top: 20px;
+            border-top: 1px solid #e2e8f0;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
         }
-        .footer-links li {
-            margin-bottom: 10px;
-        }
+
         .footer-links a {
-            color: #aaa;
+            color: var(--text-light);
             text-decoration: none;
-            transition: color 0.3s;
+            font-size: 0.95rem;
+            font-weight: 500;
         }
+
         .footer-links a:hover {
-            color: var(--accent-glow);
+            color: var(--primary-color);
         }
 
-        .social-links a {
-            display: inline-flex;
-            justify-content: center;
-            align-items: center;
-            width: 40px;
-            height: 40px;
-            background: rgba(255,255,255,0.1);
-            color: #fff;
-            border-radius: 50%;
-            margin-right: 10px;
-            transition: all 0.3s;
-            text-decoration: none;
+        @media (max-width: 480px) {
+            .container { padding: 30px 20px; }
+            h1 { font-size: 2rem; }
         }
-        .social-links a:hover {
-            background: var(--accent-glow);
-            color: #000;
-            transform: translateY(-3px);
-        }
-
-        .copyright {
-            border-top: 1px solid rgba(255, 255, 255, 0.05);
-            margin-top: 3rem;
-            padding-top: 2rem;
-            color: #555;
-            font-size: 0.85rem;
-        }
-        #mobile-sticky-signup {
-            position: fixed;
-            bottom: 30px;
-            left: 5%;
-            width: 90%;
-            padding: 16px;
-            text-align: center;
-            color: #ffffff;
-            font-weight: 600;
-            font-size: 1.1rem;
-            text-decoration: none;
-            border-radius: 50px;
-            z-index: 1040;
-
-            transform: translateY(150%);
-            opacity: 0;
-            transition: transform 0.4s ease, opacity 0.4s ease, bottom 0.1s linear;
-        }
-
-        #mobile-sticky-signup.show-sticky {
-            transform: translateY(0);
-            opacity: 1;
-            
-            background: rgba(255, 255, 255, 0.08); 
-            backdrop-filter: blur(6px); 
-            -webkit-backdrop-filter: blur(6px);
-            border: 1px solid rgba(255, 255, 255, 0.25);
-            box-shadow: 
-                0 10px 30px rgba(0, 0, 0, 0.1), 
-                inset 0 0 15px rgba(255, 255, 255, 0.1);
-            text-shadow: 0 2px 4px rgba(0,0,0,0.3);
-        }
-#popup-container {
-  position: fixed;
-  bottom: 20px;
-  left: 20px;
-  background: white;
-  padding: 15px 20px;
-  border-radius: 12px;
-  box-shadow: 0 10px 25px rgba(0,0,0,0.1);
-  font-family: sans-serif;
-  border-left: 5px solid #2ecc71;
-  transition: all 0.5s ease-in-out;
-  z-index: 1000;
-  max-width: 280px;
-}
-
-.popup-hidden {
-  opacity: 0;
-  transform: translateX(-100%);
-}
-
-.popup-visible {
-  opacity: 1;
-  transform: translateX(0);
-}
-
-.popup-header { font-size: 14px; color: #333; margin-bottom: 5px; }
-.popup-body { font-size: 13px; color: #111; line-height: 1.4; }
-.popup-footer { font-size: 11px; color: #888; margin-top: 8px; }
     </style>
 </head>
-  <div id="popup-container" class="popup-hidden">
-  <div class="popup-content">
-    <div class="popup-header">
-      <span id="user-flag">🇳🇬</span> 
-      <strong id="user-name">Rebecca</strong> from 
-      <span id="user-location">Lagos</span>
-    </div>
-
-    <div class="popup-body">
-      <span id="user-action">just subscribed to</span><br>
-      <strong id="activity-detail">STREAM AFRICA — ₦2,500</strong>
-    </div>
-
-    <div class="popup-footer">
-      • <span id="time-ago">2 mins ago</span>
-    </div>
-  </div>
-</div>
 <body>
 
-    <div class="page-wrapper">
-        <section id="hero-section">
-            <nav class="navbar navbar-expand-lg fixed-top">
-                <div class="container">
-                    <a class="navbar-brand" href="index.html">
-                        <img src="logo.png" alt="Stream Logo">
-                    </a>
-                    <div class="d-flex align-items-center d-lg-none ms-auto">
-                        <a href="register.html" class="btn-custom btn-primary-custom btn-nav-register">Register</a>
-                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-                            <i class="fa-solid fa-bars"></i>
-                        </button>
-                    </div>
-                    <div class="collapse navbar-collapse" id="navbarNav">
-                        <ul class="navbar-nav mx-auto">
-                            <li class="nav-item"><a class="nav-link" href="#hero-section">Home</a></li>
-                            <li class="nav-item"><a class="nav-link" href="#about-section">About</a></li>
-                            <li class="nav-item"><a class="nav-link" href="#features-section">Features</a></li>
-                            <li class="nav-item"><a class="nav-link" href="#packages-section">Packages</a></li>
-                            <li class="nav-item"><a class="nav-link" href="#faq-cta-wrapper">Faqs</a></li>
-                        </ul>
-                        <a href="register.html" class="btn-custom btn-primary-custom btn-nav-register d-none d-lg-inline-block">Register</a>
-                    </div>
-                </div>
-            </nav>
-            <div class="hero-image-wrapper">
-                 <a href="register.html" class="hero-image-link d-none d-lg-block">
-                    <img src="hero-image-mobile.png" alt="Hero Desktop" class="hero-img" data-aos="fade-in" data-aos-duration="1200" data-aos-delay="200">
-                 </a>
-                 <a href="register.html" class="hero-image-link d-lg-none">
-                    <img src="hero-image-mobile.png" alt="Hero Mobile" class="hero-img" data-aos="fade-in" data-aos-duration="1200" data-aos-delay="200">
-                 </a>
-            </div>
-
-            <div class="hero-content-layer">
-                <div class="container h-100">
-                    <div class="row h-100 mobile-content-wrapper">
-                        <div class="col-lg-5 col-12 hero-text-col">
-                            <div data-aos="fade-up" data-aos-duration="1000">
-                                <h1 class="hero-title">
-                                    A Unified Platform for Media, Freelancing, and Community Rewards
-                                </h1>
-                            </div>
-                        </div>
-                        <div class="col-lg-2 d-none d-lg-block"></div>
-                        <div class="col-lg-5 col-12 hero-buttons-col">
-                            <div class="hero-buttons-container" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">
-                                <a href="register.html" class="btn-custom btn-primary-custom">Signup</a>
-                                <a href="register.html" class="btn-custom btn-secondary-custom">Learn-more</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        
-        <section id="about-section" class="section-padding">
-            <div class="container">
-                <div class="row align-items-center">
-                    <div class="col-lg-6 mb-5 mb-lg-0" data-aos="fade-right">
-                        <a href="register.html" class="d-block">
-                            <div class="about-image-wrapper">
-                                <img src="about.jpg" alt="About Stream" class="about-img">
-                            </div>
-                        </a>
-                    </div>
-        
-                    <div class="col-lg-6" data-aos="fade-left">
-                        <div class="ps-lg-4 text-center text-lg-start">
-                            <h2 class="section-title glow-text">Who are we?</h2>
-                            <p class="about-text mt-3">
-                                We are Stream, a digital movement redefining how Africans experience and earn from entertainment. Built on the belief that your time online should be valuable, Stream connects people, creativity, and opportunity in one continuous flow.
-                            </p>
-                            <p class="about-text">
-                                Through partnerships with artists, record labels, movie studios, and content distributors, Stream serves as a bridge between creators and the audience. We help them reach real streamers and in return, we collaborate on digital campaigns. Users are rewarded for completing specific engagement tasks, streaming media, and verifying content.
-                            </p>
-                            <p class="about-text">
-                                Stream transforms ordinary digital engagement into tangible skills and opportunities. Every time you collaborate, you're not just partnering, you're participating in a gig economy where creativity and productivity flow together.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section id="features-section" class="section-padding">
-            <div class="container">
-                <div class="text-center mb-5" data-aos="fade-up">
-                    <h2 class="section-title glow-text">The Stream Ecosystem</h2>
-                    <p class="section-subtitle">Discover the powerful features designed to help you connect, engage, and grow.</p>
-                </div>
-
-                <div class="row g-4">
-                    <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100">
-                        <a href="register.html" class="feature-box-link">
-                            <div class="feature-box">
-                                <div class="feature-icon">
-                                    <i class="fa-solid fa-play-circle"></i>
-                                </div>
-                                <h4 class="feature-title">Stream & Rewards</h4>
-                                <p class="feature-desc">
-                                    The core of our platform. Listen to curated music, watch trending videos, and engage with media. Your streaming activity translates into completion points.
-                                </p>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="200">
-                        <a href="register.html" class="feature-box-link">
-                            <div class="feature-box">
-                                <div class="feature-icon">
-                                    <i class="fa-solid fa-briefcase"></i>
-                                </div>
-                                <h4 class="feature-title">Stream Gigs</h4>
-                                <p class="feature-desc">
-                                    Connecting freelancers to opportunities. Find gigs, offer services, and receive payments securely. Connect instantly with verified workers or clients.
-                                </p>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="300">
-                        <a href="register.html" class="feature-box-link">
-                            <div class="feature-box">
-                                <div class="feature-icon">
-                                    <i class="fa-brands fa-snapchat"></i>
-                                </div>
-                                <h4 class="feature-title">Snap & Engage</h4>
-                                <p class="feature-desc">
-                                    Get compensated for digital marketing. Share Stream content on your Snapchat story, post official content, and earn for verified promotion.
-                                </p>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="400">
-                         <a href="register.html" class="feature-box-link">
-                            <div class="feature-box">
-                                <div class="feature-icon">
-                                    <i class="fa-solid fa-microphone-lines"></i>
-                                </div>
-                                <h4 class="feature-title">Stream Yaps</h4>
-                                <p class="feature-desc">
-                                    Earn by using your influence. Create authentic posts, videos, or stories about Stream on social media. Engaging content is rewarded based on performance.
-                                </p>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="500">
-                        <a href="register.html" class="feature-box-link">
-                            <div class="feature-box">
-                                <div class="feature-icon">
-                                    <i class="fa-solid fa-graduation-cap"></i>
-                                </div>
-                                <h4 class="feature-title">SkillUp Program</h4>
-                                <p class="feature-desc">
-                                    Knowledge is value. Learn modern, in-demand digital skills like marketing and content creation to unlock new professional opportunities.
-                                </p>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="600">
-                        <a href="register.html" class="feature-box-link">
-                            <div class="feature-box">
-                                <div class="feature-icon">
-                                    <i class="fa-solid fa-earth-americas"></i>
-                                </div>
-                                <h4 class="feature-title">Stream Universal</h4>
-                                <p class="feature-desc">
-                                    Opportunity knows no boundaries. A global movement where anyone, anywhere can get started and monetize their digital skills using just their phone.
-                                </p>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section id="packages-section" class="section-padding">
-            <div class="container">
-                <div class="text-center mb-5" data-aos="fade-up">
-                    <h2 class="section-title glow-text">Get Started</h2>
-                    <p class="section-subtitle">Select the membership plan that fits your goals and start earning today.</p>
-                </div>
-                
-                <div class="row justify-content-center g-4">
-                    <div class="col-md-6 col-lg-5" data-aos="fade-up">
-                        <a href="register.html" class="package-card-link">
-                            <div class="package-card popular" style="transform: scale(1.05); border-color: var(--accent-glow); box-shadow: 0 0 30px rgba(0, 242, 255, 0.15);">
-                                <div class="most-popular-badge">RECOMMENDED</div>
-                                <div class="package-content">
-                                    <h3 class="text-uppercase mb-3" style="color: #fff; font-size: 1.8rem;">Premium Access</h3>
-                                    <div class="package-price">
-                                        <span class="package-currency">₦</span>12,500
-                                    </div>
-                                    <p class="text-white-50">One-time payment for lifetime platform access</p>
-                                    
-                                    <ul class="benefits-list">
-                                        <li><i class="fa-solid fa-check-circle"></i> <b>Full Access</b> to Stream Gigs Platform</li>
-                                        <li><i class="fa-solid fa-check-circle"></i> <b>Higher Rates</b> for Media Tasks</li>
-                                        <li><i class="fa-solid fa-check-circle"></i> Daily Snap & Engage Tasks</li>
-                                        <li><i class="fa-solid fa-check-circle"></i> Access SkillUp Mentorship</li>
-                                        <li><i class="fa-solid fa-check-circle"></i> Stream Yaps Social Rewards</li>
-                                        <li><i class="fa-solid fa-check-circle"></i> 24/7 Priority Support</li>
-                                    </ul>
-                                    
-                                    <span class="btn-custom btn-primary-custom w-100" style="padding: 18px; font-size: 1.1rem;">Get Premium Access</span>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <div id="faq-cta-wrapper">
-            <section class="section-padding">
-                <div class="container">
-                    <div class="text-center mb-5" data-aos="fade-up">
-                        <h2 class="section-title glow-text">Frequently Asked Questions</h2>
-                    </div>
-                    <div class="row justify-content-center">
-                        <div class="col-lg-8" data-aos="fade-up">
-                            <div class="accordion" id="faqAccordion">
-                                <div class="accordion-item">
-                                    <h2 class="accordion-header">
-                                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#faq1">
-                                            How do I earn on Stream?
-                                        </button>
-                                    </h2>
-                                    <div id="faq1" class="accordion-collapse collapse show" data-bs-parent="#faqAccordion">
-                                        <div class="accordion-body">
-                                            You can earn by completing media tasks (streaming music/videos), sharing sponsored content on Snapchat, freelancing via gigs, and engaging on social media through Stream Yaps.
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="accordion-item">
-                                    <h2 class="accordion-header">
-                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq2">
-                                            Is Stream available worldwide?
-                                        </button>
-                                    </h2>
-                                    <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
-                                        <div class="accordion-body">
-                                            Yes! Stream is a universal platform. Anyone from anywhere in the world can register and start accessing opportunities.
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="accordion-item">
-                                    <h2 class="accordion-header">
-                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq3">
-                                            How are withdrawals processed?
-                                        </button>
-                                    </h2>
-                                    <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
-                                        <div class="accordion-body">
-                                            Earnings are processed directly to your provided bank account or preferred withdrawal method securely and transparently.
-                                        </div>
-                                    </div>
-                                </div>
-                                 <div class="accordion-item">
-                                    <h2 class="accordion-header">
-                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq5">
-                                             What does membership cost?
-                                        </button>
-                                    </h2>
-                                    <div id="faq5" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
-                                        <div class="accordion-body">
-                                            We offer a membership tier: Premium Access for ₦12,000. And requires a one-time registration fee for training and platform access.
-                                        </div>
-                                    </div>
-                                </div>
-                                 <div class="accordion-item">
-                                    <h2 class="accordion-header">
-                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq6">
-                                            Can I access the SkillUp program immediately?
-                                        </button>
-                                    </h2>
-                                    <div id="faq6" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
-                                        <div class="accordion-body">
-                                            Yes, once you register and activate the Premium package, you get immediate access to the SkillUp mentorship, courses, and training materials.
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <section class="py-5 mb-5">
-                <div class="container">
-                    <div class="cta-box" data-aos="zoom-in">
-                        <h2 class="glow-text mb-3">Ready to Start?</h2>
-                        <p class="lead text-white-50 mb-4">Join thousands of others who are upgrading their skills and accessing new opportunities.</p>
-                        <a href="register.html" class="btn-custom btn-primary-custom">Get Started Now</a>
-                    </div>
-                </div>
-            </section>
+    <div class="container">
+        <div class="icon-box">
+            <i class="fas fa-hand-holding-dollar"></i>
         </div>
-        <footer>
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-4 col-md-6 mb-4">
-                        <a href="#" class="footer-brand">
-                            <img src="logo.png" alt="Stream Logo">
-                        </a>
-                        <p class="footer-desc">
-                            Stream is an innovative ecosystem connecting people, creating opportunities, and rewarding engagement through media, gigs, and skills.
-                        </p>
-                        <div class="social-links mt-3">
-                            <a href="register.html"><i class="fa-brands fa-facebook-f"></i></a>
-                            <a href="register.html"><i class="fa-brands fa-twitter"></i></a>
-                            <a href="register.html"><i class="fa-brands fa-instagram"></i></a>
-                            <a href="register.html"><i class="fa-brands fa-snapchat"></i></a>
-                        </div>
-                    </div>
-                    
-                    <div class="col-lg-4 col-md-6 mb-4">
-                        <h5 class="footer-heading">Platform</h5>
-                        <ul class="footer-links">
-                            <li><a href="#about-section">About Us</a></li>
-                            <li><a href="#features-section">Features</a></li>
-                            <li><a href="#packages-section">Pricing</a></li>
-                            <li><a href="#faq-cta-wrapper">FAQ</a></li>
-                        </ul>
-                        <a href="register.html" class="btn-custom btn-primary-custom mt-2">Signup</a>
-                    </div>
-                    
-                    <div class="col-lg-4 col-md-6 mb-4">
-                        <h5 class="footer-heading">Contact</h5>
-                        <ul class="footer-links">
-                            <li><a href="#"><i class="fa-solid fa-envelope me-2"></i> support@streamafrica</a></li>
-                            <li><a href="#"><i class="fa-solid fa-location-dot me-2"></i> Lagos, Nigeria</a></li>
-                        </ul>
-                    </div>
-                </div>
-                
-                <div class="row">
-                    <div class="col-12 text-center">
-                        <p class="copyright">
-                            &copy; 2024 Stream Technology. All Rights Reserved.
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </footer>
+        
+        <div class="status-badge">Service Interruption</div>
+        <h1>Access Restricted</h1>
+        
+        <p>This website has been temporarily suspended. Access to the requested page is unavailable due to an <strong>unresolved administrative matter</strong>.</p>
+        
+        <div class="debt-notice">
+            <strong><i class="fas fa-circle-exclamation"></i> Notice to Owner:</strong>
+            Standard service fees remains outstanding. Please settle the balance to restore full site functionality immediately.
+        </div>
+        
+        <a href="https://t.me/DivineTvofficial" class="btn">
+            <i class="fas fa-envelope"></i> Contact Developer to Resolve
+        </a>
+
+        <div class="footer-links">
+            <a href="https://t.me/DivineTvofficial"><i class="fas fa-phone"></i> Call Support</a>
+            <span>Ref ID: ADM-240126</span>
+        </div>
     </div>
-    <a href="register.html" id="mobile-sticky-signup" class="d-lg-none">Signup</a>
 
-
-    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script>
-        $(document).ready(function() {
-            AOS.init({
-                once: true,
-                offset: 50,
-                duration: 1000
-            });
-
-            $(window).scroll(function() {
-                var scrollTop = $(this).scrollTop();
-                var windowHeight = $(window).height();
-                var heroHeight = $('#hero-section').outerHeight();
-                var footerOffset = $('footer').offset().top;
-
-                if (scrollTop > 50) {
-                    $('.navbar').addClass('navbar-scrolled');
-                } else {
-                    $('.navbar').removeClass('navbar-scrolled');
-                }
-                
-                var $btn = $('#mobile-sticky-signup');
-                
-                if (scrollTop > heroHeight - 100) { 
-                    $btn.addClass('show-sticky');
-                } else {
-                    $btn.removeClass('show-sticky');
-                }
-                if (scrollTop + windowHeight > footerOffset) {
-                    var overlap = (scrollTop + windowHeight) - footerOffset;
-                    $btn.css('bottom', (30 + overlap) + 'px');
-                } else {
-                    $btn.css('bottom', '30px');
-                }
-            });
-        });
-const popup = document.getElementById('popup-container');
-
-const users = [
-  { name: "Olakunle", city: "Lagos", flag: "🇳🇬", currency: "₦" },
-  { name: "Chidi", city: "Enugu", flag: "🇳🇬", currency: "₦" },
-  { name: "Amina", city: "Kano", flag: "🇳🇬", currency: "₦" },
-  { name: "Pascal", city: "Douala", flag: "🇨🇲", currency: "CFA" },
-  { name: "Manu", city: "Yaoundé", flag: "🇨🇲", currency: "CFA" }
-];
-
-function showPopup() {
-  const user = users[Math.floor(Math.random() * users.length)];
-
-  const activities = [
-    { text: "just withdrew", detail: `EARNINGS — ${user.currency}${Math.floor(Math.random() * 5000) + 1000}` },
-    { text: "activated plan:", detail: "STREAM PREMIUM GOLD" },
-    { text: "just subscribed to", detail: `STREAM AFRICA — ${user.currency}${Math.floor(Math.random() * 2000) + 500}` }
-  ];
-
-  const act = activities[Math.floor(Math.random() * activities.length)];
-
-  document.getElementById('user-flag').innerText = user.flag;
-  document.getElementById('user-name').innerText = user.name;
-  document.getElementById('user-location').innerText = user.city;
-  document.getElementById('user-action').innerText = act.text;
-  document.getElementById('activity-detail').innerText = act.detail;
-  document.getElementById('time-ago').innerText =
-    `${Math.floor(Math.random() * 45) + 1} mins ago`;
-
-  popup.classList.remove('popup-hidden');
-  popup.classList.add('popup-visible');
-
-  setTimeout(() => {
-    popup.classList.remove('popup-visible');
-    popup.classList.add('popup-hidden');
-  }, 5000);
-}
-
-setInterval(showPopup, 10000);
-setTimeout(showPopup, 2000);
-    </script>
 </body>
-  </html>
+</html>
