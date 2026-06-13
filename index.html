@@ -1,170 +1,137 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Service Suspended - Payment Required</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    
+    <title>We've Moved!</title>
     <style>
-        :root {
-            --primary-color: #ef4444; /* Changed to Red for urgency */
-            --text-dark: #1e293b;
-            --text-light: #64748b;
-            --warning-bg: #fef2f2;
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         }
 
         body {
-            background-color: #f8fafc;
-            color: var(--text-dark);
-            font-family: 'Inter', system-ui, -apple-system, sans-serif;
+            background: #0f172a; /* Dark sleek background */
+            color: #f8fafc;
             display: flex;
-            align-items: center;
             justify-content: center;
-            min-height: 100vh;
-            margin: 0;
+            align-items: center;
+            height: 100vh;
+            text-align: center;
             padding: 20px;
         }
 
         .container {
-            max-width: 550px;
-            width: 100%;
-            padding: 40px;
-            background: white;
-            border-radius: 24px;
-            box-shadow: 0 20px 50px rgba(0,0,0,0.1);
-            text-align: center;
-            border: 1px solid #fee2e2;
+            max-width: 600px;
+            padding: 40px 30px;
+            background: #1e293b;
+            border-radius: 16px;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+            border: 1px solid #334155;
         }
 
-        .icon-box {
-            font-size: 4rem;
-            color: var(--primary-color);
+        .icon {
+            font-size: 64px;
             margin-bottom: 20px;
-            animation: pulse 2s infinite;
-        }
-
-        @keyframes pulse {
-            0% { transform: scale(1); opacity: 1; }
-            50% { transform: scale(1.1); opacity: 0.8; }
-            100% { transform: scale(1); opacity: 1; }
+            animation: float 3s ease-in-out infinite;
         }
 
         h1 {
             font-size: 2.5rem;
-            margin: 0 0 10px 0;
-            font-weight: 800;
-            color: #b91c1c;
-        }
-
-        .status-badge {
-            display: inline-block;
-            background: var(--warning-bg);
-            color: var(--primary-color);
-            padding: 6px 16px;
-            border-radius: 99px;
-            font-weight: 700;
-            font-size: 0.85rem;
-            text-transform: uppercase;
-            margin-bottom: 20px;
-            border: 1px solid #fecaca;
+            margin-bottom: 15px;
+            color: #38bdf8; /* Vibrant accent color */
         }
 
         p {
-            color: var(--text-light);
             font-size: 1.1rem;
+            color: #94a3b8;
             line-height: 1.6;
             margin-bottom: 25px;
         }
 
-        .debt-notice {
-            background: #fff7ed;
-            border-left: 4px solid #f97316;
+        .redirect-box {
+            background: #0f172a;
             padding: 15px;
-            text-align: left;
-            margin-bottom: 30px;
             border-radius: 8px;
+            border: 1px dashed #38bdf8;
+            display: inline-block;
+            margin-bottom: 20px;
         }
 
-        .debt-notice strong {
-            color: #9a3412;
-            display: block;
-            margin-bottom: 5px;
+        .countdown {
+            font-weight: bold;
+            color: #f43f5e; /* Eye-catching red/pink for the timer */
+            font-size: 1.3rem;
         }
 
         .btn {
-            display: inline-flex;
-            align-items: center;
-            justify-content: center;
-            gap: 10px;
-            padding: 14px 28px;
-            background-color: var(--text-dark);
-            color: white;
+            display: inline-block;
+            padding: 12px 24px;
+            background: #38bdf8;
+            color: #0f172a;
             text-decoration: none;
-            border-radius: 12px;
             font-weight: 600;
+            border-radius: 8px;
             transition: all 0.3s ease;
-            width: 100%;
-            box-sizing: border-box;
         }
 
         .btn:hover {
-            background-color: #000;
+            background: #0ea5e9;
             transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(56, 189, 248, 0.3);
         }
 
-        .footer-links {
-            margin-top: 30px;
-            padding-top: 20px;
-            border-top: 1px solid #e2e8f0;
-            display: flex;
-            flex-direction: column;
-            gap: 10px;
-        }
-
-        .footer-links a {
-            color: var(--text-light);
-            text-decoration: none;
-            font-size: 0.95rem;
-            font-weight: 500;
-        }
-
-        .footer-links a:hover {
-            color: var(--primary-color);
-        }
-
-        @media (max-width: 480px) {
-            .container { padding: 30px 20px; }
-            h1 { font-size: 2rem; }
+        /* Simple floating animation for visual style */
+        @keyframes float {
+            0% { transform: translateY(0px); }
+            50% { transform: translateY(-10px); }
+            100% { transform: translateY(0px); }
         }
     </style>
 </head>
 <body>
 
     <div class="container">
-        <div class="icon-box">
-            <i class="fas fa-hand-holding-dollar"></i>
+        <div class="icon">🚀</div>
+        <h1>We've Moved!</h1>
+        <p>This version of the website is no longer available. We have upgraded and shifted to a brand new home to serve you better.</p>
+        
+        <div class="redirect-box">
+            <span>Wait, redirecting you in <span id="timer" class="countdown">10</span> seconds...</span>
         </div>
-        
-        <div class="status-badge">Service Interruption</div>
-        <h1>Access Restricted</h1>
-        
-        <p>This website has been temporarily suspended. Access to the requested page is unavailable due to an <strong>unresolved administrative matter</strong>.</p>
-        
-        <div class="debt-notice">
-            <strong><i class="fas fa-circle-exclamation"></i> Notice to Owner:</strong>
-            Standard service fees remains outstanding. Please settle the balance to restore full site functionality immediately.
-        </div>
-        
-        <a href="https://t.me/clicksensewithDivineTv/695" class="btn">
-            <i class="fas fa-envelope"></i> Contact Developer to Resolve
-        </a>
 
-        <div class="footer-links">
-            <a href="https://t.me/clicksensewithDivineTv/695"><i class="fas fa-phone"></i> Call Support</a>
-            <span>Ref ID: ADM-240126</span>
+        <div>
+            <p style="font-size: 0.9rem; margin-bottom: 10px;">Not redirecting? Click the link below:</p>
+            <a id="destination-link" href="https://nexorawebsite.com.ng" class="btn">Go to New Site</a>
         </div>
     </div>
+
+    <script>
+        // URL configuration - Change this to your actual new website link
+        const targetURL = "https://nexorawebsite.com.ng";
+        
+        // Update the button link programmatically just in case
+        document.getElementById('destination-link').href = targetURL;
+
+        let timeLeft = 10;
+        const timerElement = document.getElementById('timer');
+
+        // Countdown interval loop
+        const countdownInterval = setInterval(() => {
+            timeLeft--;
+            timerElement.textContent = timeLeft;
+
+            if (timeLeft <= 0) {
+                clearInterval(countdownInterval);
+                timerElement.textContent = "0";
+                // Perform the redirection
+                window.location.href = targetURL;
+            }
+        }, 1000);
+    </script>
 
 </body>
 </html>
